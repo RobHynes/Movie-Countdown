@@ -34,5 +34,6 @@ function setTimer(elem_id, date, img_id) {
 	}, 1000);
 }
 
+// example function calls. Want to change this to use a button to make a new counter
 setTimer("BlackWidow","May 1, 2020 12:00:00", "https://img.cinemablend.com/filter:scale/quill/f/2/d/c/3/d/f2dc3d3e03033f8b9ce02b7015f789264ef248ab.jpg?mw=600");
 setTimer("Kingsman","September 18, 2020 12:00:00", "https://moviehole.net/img/TKM_TitleTreatment.jpg");
