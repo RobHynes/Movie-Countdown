@@ -2,8 +2,8 @@ function setTimer(elem_id, date, img_id) {
 	
 	var img = document.createElement('IMG');
 	img.setAttribute("src", img_id);
-    img.setAttribute("width", "360");
-    img.setAttribute("height", "243");
+    	img.setAttribute("width", "360");
+    	img.setAttribute("height", "243");
 	document.body.appendChild(img); 
 	
 	var para = document.createElement('P');
@@ -23,10 +23,8 @@ function setTimer(elem_id, date, img_id) {
 		var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
 		//var seconds = Math.floor((distance % (1000*60)) / 1000);
 		
-		// Display time result in element with this ID
+		// Display time result in text node
 		t.nodeValue = days + "d " + hours + "h " + minutes + "m";
-		// document.getElementById(elem_id).innerHTML = days + "d " + hours + "h " + minutes + "m ";
-		//document.getElementById("countdownTimer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 		
 		// If the countdown is finished, write something
 		if (distance < 0) {
